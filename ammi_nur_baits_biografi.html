@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biografi Ustadz Ammi Nur Baits</title>
-    
+
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -13,6 +14,7 @@
             background-color: #fafafa;
             color: #444;
         }
+
         main {
             max-width: 750px;
             margin: 40px auto;
@@ -21,25 +23,30 @@
             border-radius: 12px;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
         }
+
         header {
             text-align: center;
             border-bottom: 4px solid #e67e22;
             padding-bottom: 20px;
             margin-bottom: 30px;
         }
+
         h1 {
             color: #e67e22;
             font-size: 2.4em;
             margin: 0;
         }
+
         h2 {
             color: #d35400;
             font-size: 1.5em;
             margin-top: 5px;
         }
+
         section {
             margin-bottom: 25px;
         }
+
         section h3 {
             color: #f1c40f;
             background-color: #fffaf0;
@@ -47,16 +54,19 @@
             border-left: 5px solid #e67e22;
             margin-bottom: 15px;
         }
+
         .data-list dt {
             font-weight: bold;
             color: #2c3e50;
             margin-top: 10px;
         }
+
         .data-list dd {
             margin-left: 0;
             padding-bottom: 5px;
             border-bottom: 1px dotted #f39c12;
         }
+
         footer {
             text-align: center;
             border-top: 1px solid #ddd;
@@ -65,6 +75,7 @@
             font-size: 0.8em;
             color: #7f8c8d;
         }
+
         .btn-effect {
             background-color: #2ecc71;
             color: white;
@@ -74,10 +85,12 @@
             cursor: pointer;
             transition: background-color 0.3s;
         }
+
         .btn-effect:hover {
             background-color: #27ae60;
         }
-         .btn {
+
+        .btn {
             color: white;
             padding: 10px 20px;
             border: none;
@@ -86,24 +99,29 @@
             transition: background-color 0.3s;
             margin: 6px;
         }
+
         .btn-highlight {
             background-color: #3498db;
         }
+
         .btn-highlight:hover {
             background-color: #2980b9;
         }
+
         .btn-top {
             background-color: #16a085;
         }
+
         .btn-top:hover {
             background-color: #13876f;
         }
     </style>
 </head>
+
 <body>
 
     <main role="main">
-                <!-- anchor target for "back to top" -->
+        <!-- anchor target for "back to top" -->
         <a id="top"></a>
         <header>
             <hgroup>
@@ -113,10 +131,10 @@
         </header>
 
         <article id="profil-ammi">
-            
+
             <section id="pendahuluan">
                 <p>
-                    Ustadz Ammi Nur Baits berasal dari Lamongan dan dikenal sebagai ulama yang secara khusus mendalami isu-isu Fikih Muamalah Kontemporer. Beliau adalah salah satu pembina utama <strong style="color: #e67e22;">KonsultasiSyariah.com</strong> dan <strong style="color: #e67e22;">PengusahaMuslim.com</strong>.
+                    Ustadz Ammi Nur Baits berasal dari Lamongan dan dikenal sebagai ulama yang secara khusus mendalami isu-isu Fikih Muamalah Kontemporer. Beliau adalah salah satu pembina utama <strong style="color: #e67e22;"><a href="https://konsultasisyariah.com/">KonsultasiSyariah.com</a></strong> dan <strong style="color: #e67e22;"><a href="https://pengusahamuslim.com/">PengusahaMuslim.com</a></strong>.
                 </p>
             </section>
 
@@ -125,7 +143,7 @@
                 <dl class="data-list">
                     <dt>S1 Umum</dt>
                     <dd>Teknik Nuklir, Universitas Gadjah Mada (UGM), Yogyakarta (2006).</dd>
-                    
+
                     <dt>S1 Syariah</dt>
                     <dd>Jurusan Fikih dan Ushul Fikih, Madinah International University (MEDIU) (2011).</dd>
                 </dl>
@@ -142,11 +160,18 @@
                     <li>Ada Apa dengan Riba</li>
                     <li>Fiqh Qurban</li>
                 </ul>
-                <button 
-                    onclick="var el = document.getElementById('aktivitas-karya'); el.style.backgroundColor = '#f7fcfc'; setTimeout(function(){el.style.backgroundColor='transparent';}, 1000);" 
-                    class="btn-effect"
-                >
-                    Highlight Aktivitas (JS)
+                <button onclick="
+                        var el = document.getElementById('profil-ammi');
+                        var originalColor = '#fcfcfc'; /* Warna asal dari Internal CSS */
+                        el.style.backgroundColor = '#ffeedd'; /* Highlight warna baru */
+                        
+                        /* Reset warna setelah 2 detik */
+                        setTimeout(function(){
+                            el.style.backgroundColor = originalColor;
+                        }, 2000);
+                    " 
+                    class="btn-effect">
+                    Aktivitas
                 </button>
             </section>
 
@@ -154,25 +179,17 @@
 
         <footer>
             <p>Ustadz Ammi Nur Baits adalah contoh ulama yang menjembatani ilmu umum dan ilmu syar’i.</p>
-                        <!-- Back buttons -->
+            <!-- Back buttons -->
             <div>
                 <!-- Back to index (relative path) -->
-                <button
-                    type="button"
-                    class="btn btn-highlight"
-                    onclick="window.location.href='index.html';"
-                    aria-label="Kembali ke halaman utama"
-                >
+                <button type="button" class="btn btn-highlight" onclick="window.location.href='index.html';"
+                    aria-label="Kembali ke halaman utama">
                     Kembali ke Index
                 </button>
 
                 <!-- Back to top (smooth scroll) -->
-                <button
-                    type="button"
-                    class="btn btn-highlight btn-top"
-                    onclick="window.scrollTo({top:0, behavior:'smooth'});"
-                    aria-label="Kembali ke atas halaman"
-                >
+                <button type="button" class="btn btn-highlight btn-top"
+                    onclick="window.scrollTo({top:0, behavior:'smooth'});" aria-label="Kembali ke atas halaman">
                     Kembali ke Atas
                 </button>
             </div>
@@ -181,4 +198,5 @@
     </main>
 
 </body>
+
 </html>
