@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografi Dr. Firanda Andirja</title>
+    
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f7;
+            color: #2c3e50;
+        }
+        main {
+            max-width: 750px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            text-align: center;
+            border-bottom: 4px solid #3498db;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #3498db;
+            font-size: 2.4em;
+            margin: 0;
+        }
+        h2 {
+            color: #1a5276;
+            font-size: 1.5em;
+            margin-top: 5px;
+        }
+        section {
+            margin-bottom: 25px;
+        }
+        section h3 {
+            color: #2980b9;
+            border-left: 5px solid #3498db;
+            padding-left: 10px;
+            margin-bottom: 15px;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #ecf0f1;
+        }
+        footer {
+            text-align: center;
+            border-top: 1px solid #ddd;
+            padding-top: 15px;
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #7f8c8d;
+        }
+        .btn-toggle {
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn-toggle:hover {
+            background-color: #c0392b;
+        }
+        .btn {
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin: 6px;
+        }
+        .btn-highlight {
+            background-color: #3498db;
+        }
+        .btn-highlight:hover {
+            background-color: #2980b9;
+        }
+        .btn-top {
+            background-color: #16a085;
+        }
+        .btn-top:hover {
+            background-color: #13876f;
+        }
+    </style>
+</head>
+<body>
+
+    <main role="main">
+                <!-- anchor target for "back to top" -->
+        <a id="top"></a>
+        <header>
+            <hgroup>
+                <h1>Biografi Ustadz Dr. Firanda Andirja, M.A.</h1>
+                <h2>Pakar Aqidah | Alumni Universitas Islam Madinah</h2>
+            </hgroup>
+        </header>
+
+        <article id="profil-firanda">
+            
+            <section id="pendahuluan">
+                <p>
+                    Ustadz Firanda Andirja Abidin (lahir 28 Oktober 1979) adalah salah satu ulama yang terkenal dengan pendidikan syar’i yang ditempuh seluruhnya di Madinah. Beliau dikenal karena fokus kajiannya yang mendalam pada bidang Akidah dan Hadits.
+                </p>
+                <p>
+                    Beliau juga pernah menjadi penceramah berbahasa Indonesia yang diamanahkan oleh Pemerintah Arab Saudi di Masjid Nabawi, Madinah.
+                </p>
+            </section>
+
+            <section id="riwayat-pendidikan">
+                <h3>Riwayat Pendidikan Formal</h3>
+                <ul>
+                    <li><strong>Awal:</strong> Sempat menempuh S1 di Teknik Kimia UGM sebelum beralih ke ilmu agama.</li>
+                    <li><strong>S1 (Cumlaude):</strong> Fakultas Hadits, Universitas Islam Madinah.</li>
+                    <li><strong>S2 (Summa Cumlaude):</strong> Jurusan Aqidah, Fakultas Dakwah dan Ushuluddin, UIM.</li>
+                    <li><strong>S3 (Doktoral Summa Cumlaude):</strong> Jurusan Aqidah, UIM. Disertasi beliau berjudul tentang bantahan terhadap pluralisme agama.</li>
+                </ul>
+            </section>
+
+            <section id="aktivitas-karya">
+                <h3>Aktivitas Utama & Karya</h3>
+                <p id="karya-list" style="display: block;">
+                    Ustadz Firanda aktif mengisi kajian di berbagai media termasuk Yufid TV dan Radio Rodja. Beliau memiliki beberapa karya tulis, di antaranya: 
+                    <em style="color:#2980b9;">Kiat-Kiat Membahagiakan Istri, Syarah Al-Arba'in An-Nawawiyah,</em> dan tulisan bantahan terhadap kelompok menyimpang.
+                </p>
+                <button 
+                    onclick="var el = document.getElementById('karya-list'); el.style.display = (el.style.display === 'none' ? 'block' : 'none');" 
+                    class="btn-toggle"
+                >
+                    Toggle Info Karya (JS)
+                </button>
+            </section>
+
+        </article>
+
+        <footer>
+            <p>Disusun berdasarkan data publikasi resmi dan sumber-sumber dakwah Islam.</p>
+                        <!-- Back buttons -->
+            <div>
+                <!-- Back to index (relative path) -->
+                <button
+                    type="button"
+                    class="btn btn-highlight"
+                    onclick="window.location.href='index.html';"
+                    aria-label="Kembali ke halaman utama"
+                >
+                    Kembali ke Index
+                </button>
+
+                <!-- Back to top (smooth scroll) -->
+                <button
+                    type="button"
+                    class="btn btn-highlight btn-top"
+                    onclick="window.scrollTo({top:0, behavior:'smooth'});"
+                    aria-label="Kembali ke atas halaman"
+                >
+                    Kembali ke Atas
+                </button>
+            </div>
+        </footer>
+
+    </main>
+
+</body>
+</html>

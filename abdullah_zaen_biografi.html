@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografi Ustadz Abdullah Zaen</title>
+    
+    <style>
+        body {
+            font-family: 'Verdana', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ebf5fb;
+            color: #34495e;
+        }
+        main {
+            max-width: 750px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            text-align: center;
+            border-bottom: 4px solid #1abc9c;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #1abc9c;
+            font-size: 2.4em;
+            margin: 0;
+        }
+        h2 {
+            color: #117a65;
+            font-size: 1.5em;
+            margin-top: 5px;
+        }
+        section {
+            margin-bottom: 25px;
+        }
+        section h3 {
+            color: #16a085;
+            border-left: 5px solid #1abc9c;
+            padding-left: 10px;
+            margin-bottom: 15px;
+        }
+        .info-pendidikan li {
+            padding: 8px 0;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        blockquote {
+            background-color: #f7f9f9;
+            border-left: 4px solid #16a085;
+            padding: 15px;
+            font-style: italic;
+        }
+        footer {
+            text-align: center;
+            border-top: 1px solid #ddd;
+            padding-top: 15px;
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #7f8c8d;
+        }
+        .btn {
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin: 6px;
+        }
+        .btn-highlight {
+            background-color: #3498db;
+        }
+        .btn-highlight:hover {
+            background-color: #2980b9;
+        }
+        .btn-top {
+            background-color: #16a085;
+        }
+        .btn-top:hover {
+            background-color: #13876f;
+        }
+    </style>
+</head>
+<body>
+
+    <main role="main">
+        <!-- anchor target for "back to top" -->
+        <a id="top"></a>
+        
+        <header>
+            <hgroup>
+                <h1>Biografi Ustadz Abdullah Zaen, Lc., M.A.</h1>
+                <h2>Pengasuh Pondok Pesantren Tunas Ilmu, Purbalingga</h2>
+            </hgroup>
+        </header>
+
+        <article id="profil-abdullah-zaen">
+            
+            <section id="pendahuluan">
+                <p>
+                    Ustadz Abdullah Zaen dikenal sebagai ulama yang berfokus pada Aqidah, Fikih Dakwah, dan Tafsir. Beliau merupakan lulusan Timur Tengah dengan predikat *Cumlaude* dan saat ini aktif membina pendidikan Islam di Indonesia.
+                </p>
+            </section>
+
+            <section id="riwayat-pendidikan">
+                <h3>Riwayat Pendidikan</h3>
+                <ul class="info-pendidikan">
+                    <li><strong>Pondok Pesantren:</strong> Pondok Modern Darussalam Gontor, Ponorogo (1994-1998).</li>
+                    <li><strong>S1 (Cumlaude):</strong> Fakultas Hadits dan Dirasat Islamiyah, Universitas Islam Madinah (2001-2004).</li>
+                    <li><strong>S2 (Cumlaude):</strong> Jurusan Aqidah, Universitas Islam Madinah (2005-2009).</li>
+                </ul>
+            </section>
+
+            <section id="aktivitas-metode">
+                <h3>Aktivitas Utama & Metode Dakwah</h3>
+                <p>
+                    Saat ini, beliau aktif mengajar di Pondok Pesantren Tunas Ilmu, Purbalingga, dan menjadi dosen di Sekolah Tinggi Dirasat Islamiyyah “Imam Syafi'i” Jember.
+                </p>
+                <blockquote>
+                    Metode dakwah beliau di Yufid TV dan kajian rutinnya sering menggunakan <strong style="color:#1abc9c;">*Mau'izah Hasanah*</strong> (nasihat yang baik) melalui kisah-kisah dan perumpamaan yang menyentuh hati.
+                </blockquote>
+                <button 
+                    onclick="this.innerText = 'Gelar S2 beliau adalah Magister Aqidah'; this.style.backgroundColor = '#16a085';" 
+                    class="btn btn-highlight"
+                >
+                    Klik untuk Detail Gelar S2 (JS)
+                </button>
+            </section>
+
+        </article>
+
+        <footer>
+            <p>Konten disusun untuk tujuan informasi dakwah. Hak cipta milik masing-masing sumber.</p>
+
+            <!-- Back buttons -->
+            <div>
+                <!-- Back to index (relative path) -->
+                <button
+                    type="button"
+                    class="btn btn-highlight"
+                    onclick="window.location.href='index.html';"
+                    aria-label="Kembali ke halaman utama"
+                >
+                    Kembali ke Index
+                </button>
+
+                <!-- Back to top (smooth scroll) -->
+                <button
+                    type="button"
+                    class="btn btn-highlight btn-top"
+                    onclick="window.scrollTo({top:0, behavior:'smooth'});"
+                    aria-label="Kembali ke atas halaman"
+                >
+                    Kembali ke Atas
+                </button>
+            </div>
+        </footer>
+
+    </main>
+
+</body>
+</html>
