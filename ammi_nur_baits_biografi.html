@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografi Ustadz Ammi Nur Baits</title>
+    
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+            color: #444;
+        }
+        main {
+            max-width: 750px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            text-align: center;
+            border-bottom: 4px solid #e67e22;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #e67e22;
+            font-size: 2.4em;
+            margin: 0;
+        }
+        h2 {
+            color: #d35400;
+            font-size: 1.5em;
+            margin-top: 5px;
+        }
+        section {
+            margin-bottom: 25px;
+        }
+        section h3 {
+            color: #f1c40f;
+            background-color: #fffaf0;
+            padding: 8px 10px;
+            border-left: 5px solid #e67e22;
+            margin-bottom: 15px;
+        }
+        .data-list dt {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-top: 10px;
+        }
+        .data-list dd {
+            margin-left: 0;
+            padding-bottom: 5px;
+            border-bottom: 1px dotted #f39c12;
+        }
+        footer {
+            text-align: center;
+            border-top: 1px solid #ddd;
+            padding-top: 15px;
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #7f8c8d;
+        }
+        .btn-effect {
+            background-color: #2ecc71;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn-effect:hover {
+            background-color: #27ae60;
+        }
+         .btn {
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin: 6px;
+        }
+        .btn-highlight {
+            background-color: #3498db;
+        }
+        .btn-highlight:hover {
+            background-color: #2980b9;
+        }
+        .btn-top {
+            background-color: #16a085;
+        }
+        .btn-top:hover {
+            background-color: #13876f;
+        }
+    </style>
+</head>
+<body>
+
+    <main role="main">
+                <!-- anchor target for "back to top" -->
+        <a id="top"></a>
+        <header>
+            <hgroup>
+                <h1>Biografi Ustadz Ammi Nur Baits, S.T., B.A.</h1>
+                <h2>Pakar Fikih Muamalah | Lulusan Teknik Nuklir UGM & MEDIU</h2>
+            </hgroup>
+        </header>
+
+        <article id="profil-ammi">
+            
+            <section id="pendahuluan">
+                <p>
+                    Ustadz Ammi Nur Baits berasal dari Lamongan dan dikenal sebagai ulama yang secara khusus mendalami isu-isu Fikih Muamalah Kontemporer. Beliau adalah salah satu pembina utama <strong style="color: #e67e22;">KonsultasiSyariah.com</strong> dan <strong style="color: #e67e22;">PengusahaMuslim.com</strong>.
+                </p>
+            </section>
+
+            <section id="riwayat-pendidikan">
+                <h3>Latar Belakang Pendidikan Multidisiplin</h3>
+                <dl class="data-list">
+                    <dt>S1 Umum</dt>
+                    <dd>Teknik Nuklir, Universitas Gadjah Mada (UGM), Yogyakarta (2006).</dd>
+                    
+                    <dt>S1 Syariah</dt>
+                    <dd>Jurusan Fikih dan Ushul Fikih, Madinah International University (MEDIU) (2011).</dd>
+                </dl>
+                <p style="margin-top: 15px; font-style: italic; font-size: 0.9em;">
+                    Kecenderungan beliau pada Fikih Ekonomi Syariah dimulai saat mengelola bagian Penelitian dan Pengembangan di Majalah Pengusaha Muslim.
+                </p>
+            </section>
+
+            <section id="aktivitas-karya">
+                <h3>Karya Tulis Populer</h3>
+                <p>Ustadz Ammi telah menulis beberapa buku fikih yang banyak dijadikan rujukan, di antaranya:</p>
+                <ul style="list-style-type: square; padding-left: 20px;">
+                    <li>Pengantar Fiqh Jual Beli</li>
+                    <li>Ada Apa dengan Riba</li>
+                    <li>Fiqh Qurban</li>
+                </ul>
+                <button 
+                    onclick="var el = document.getElementById('aktivitas-karya'); el.style.backgroundColor = '#f7fcfc'; setTimeout(function(){el.style.backgroundColor='transparent';}, 1000);" 
+                    class="btn-effect"
+                >
+                    Highlight Aktivitas (JS)
+                </button>
+            </section>
+
+        </article>
+
+        <footer>
+            <p>Ustadz Ammi Nur Baits adalah contoh ulama yang menjembatani ilmu umum dan ilmu syar’i.</p>
+                        <!-- Back buttons -->
+            <div>
+                <!-- Back to index (relative path) -->
+                <button
+                    type="button"
+                    class="btn btn-highlight"
+                    onclick="window.location.href='index.html';"
+                    aria-label="Kembali ke halaman utama"
+                >
+                    Kembali ke Index
+                </button>
+
+                <!-- Back to top (smooth scroll) -->
+                <button
+                    type="button"
+                    class="btn btn-highlight btn-top"
+                    onclick="window.scrollTo({top:0, behavior:'smooth'});"
+                    aria-label="Kembali ke atas halaman"
+                >
+                    Kembali ke Atas
+                </button>
+            </div>
+        </footer>
+
+    </main>
+
+</body>
+</html>
